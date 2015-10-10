@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84DDF61C1BC959E300265174 /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = 84DDF61B1BC959E300265174 /* blockerList.json */; };
+		84DDF61E1BC959E300265174 /* ActionRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DDF61D1BC959E300265174 /* ActionRequestHandler.swift */; };
+		84DDF6221BC959E300265174 /* AdBlockSample.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 84DDF6191BC959E300265174 /* AdBlockSample.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D40B05211BC6A0D300524843 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40B05201BC6A0D300524843 /* AppDelegate.swift */; };
 		D40B05231BC6A0D300524843 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40B05221BC6A0D300524843 /* ViewController.swift */; };
 		D40B05261BC6A0D300524843 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40B05241BC6A0D300524843 /* Main.storyboard */; };
@@ -17,6 +20,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		84DDF6201BC959E300265174 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D40B05151BC6A0D300524843 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84DDF6181BC959E300265174;
+			remoteInfo = AdBlockSample;
+		};
 		D40B05321BC6A0D300524843 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D40B05151BC6A0D300524843 /* Project object */;
@@ -33,7 +43,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		84DDF6261BC959E300265174 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				84DDF6221BC959E300265174 /* AdBlockSample.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		84DDF6191BC959E300265174 /* AdBlockSample.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AdBlockSample.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		84DDF61B1BC959E300265174 /* blockerList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = blockerList.json; sourceTree = "<group>"; };
+		84DDF61D1BC959E300265174 /* ActionRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionRequestHandler.swift; sourceTree = "<group>"; };
+		84DDF61F1BC959E300265174 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D40B051D1BC6A0D300524843 /* AdBlcok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AdBlcok.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D40B05201BC6A0D300524843 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D40B05221BC6A0D300524843 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +78,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		84DDF6161BC959E300265174 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D40B051A1BC6A0D300524843 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -74,12 +109,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84DDF61A1BC959E300265174 /* AdBlockSample */ = {
+			isa = PBXGroup;
+			children = (
+				84DDF61B1BC959E300265174 /* blockerList.json */,
+				84DDF61D1BC959E300265174 /* ActionRequestHandler.swift */,
+				84DDF61F1BC959E300265174 /* Info.plist */,
+			);
+			path = AdBlockSample;
+			sourceTree = "<group>";
+		};
 		D40B05141BC6A0D300524843 = {
 			isa = PBXGroup;
 			children = (
 				D40B051F1BC6A0D300524843 /* AdBlcok */,
 				D40B05341BC6A0D300524843 /* AdBlcokTests */,
 				D40B053F1BC6A0D300524843 /* AdBlcokUITests */,
+				84DDF61A1BC959E300265174 /* AdBlockSample */,
 				D40B051E1BC6A0D300524843 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +136,7 @@
 				D40B051D1BC6A0D300524843 /* AdBlcok.app */,
 				D40B05311BC6A0D300524843 /* AdBlcokTests.xctest */,
 				D40B053C1BC6A0D300524843 /* AdBlcokUITests.xctest */,
+				84DDF6191BC959E300265174 /* AdBlockSample.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +175,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		84DDF6181BC959E300265174 /* AdBlockSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84DDF6251BC959E300265174 /* Build configuration list for PBXNativeTarget "AdBlockSample" */;
+			buildPhases = (
+				84DDF6151BC959E300265174 /* Sources */,
+				84DDF6161BC959E300265174 /* Frameworks */,
+				84DDF6171BC959E300265174 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AdBlockSample;
+			productName = AdBlockSample;
+			productReference = 84DDF6191BC959E300265174 /* AdBlockSample.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		D40B051C1BC6A0D300524843 /* AdBlcok */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D40B05451BC6A0D300524843 /* Build configuration list for PBXNativeTarget "AdBlcok" */;
@@ -135,10 +199,12 @@
 				D40B05191BC6A0D300524843 /* Sources */,
 				D40B051A1BC6A0D300524843 /* Frameworks */,
 				D40B051B1BC6A0D300524843 /* Resources */,
+				84DDF6261BC959E300265174 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				84DDF6211BC959E300265174 /* PBXTargetDependency */,
 			);
 			name = AdBlcok;
 			productName = AdBlcok;
@@ -190,6 +256,9 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = nakazy;
 				TargetAttributes = {
+					84DDF6181BC959E300265174 = {
+						CreatedOnToolsVersion = 7.0;
+					};
 					D40B051C1BC6A0D300524843 = {
 						CreatedOnToolsVersion = 7.0;
 					};
@@ -219,11 +288,20 @@
 				D40B051C1BC6A0D300524843 /* AdBlcok */,
 				D40B05301BC6A0D300524843 /* AdBlcokTests */,
 				D40B053B1BC6A0D300524843 /* AdBlcokUITests */,
+				84DDF6181BC959E300265174 /* AdBlockSample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		84DDF6171BC959E300265174 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84DDF61C1BC959E300265174 /* blockerList.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D40B051B1BC6A0D300524843 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -251,6 +329,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		84DDF6151BC959E300265174 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84DDF61E1BC959E300265174 /* ActionRequestHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D40B05191BC6A0D300524843 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -279,6 +365,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		84DDF6211BC959E300265174 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84DDF6181BC959E300265174 /* AdBlockSample */;
+			targetProxy = 84DDF6201BC959E300265174 /* PBXContainerItemProxy */;
+		};
 		D40B05331BC6A0D300524843 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D40B051C1BC6A0D300524843 /* AdBlcok */;
@@ -311,6 +402,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		84DDF6231BC959E300265174 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				INFOPLIST_FILE = AdBlockSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nakailand.AdBlcok.AdBlockSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		84DDF6241BC959E300265174 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				INFOPLIST_FILE = AdBlockSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nakailand.AdBlcok.AdBlockSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		D40B05431BC6A0D300524843 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -398,6 +513,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = AdBlcok/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nakailand.AdBlcok;
@@ -409,6 +525,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = AdBlcok/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nakailand.AdBlcok;
@@ -467,6 +584,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		84DDF6251BC959E300265174 /* Build configuration list for PBXNativeTarget "AdBlockSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84DDF6231BC959E300265174 /* Debug */,
+				84DDF6241BC959E300265174 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		D40B05181BC6A0D300524843 /* Build configuration list for PBXProject "AdBlcok" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -483,6 +608,7 @@
 				D40B05471BC6A0D300524843 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D40B05481BC6A0D300524843 /* Build configuration list for PBXNativeTarget "AdBlcokTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +617,7 @@
 				D40B054A1BC6A0D300524843 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D40B054B1BC6A0D300524843 /* Build configuration list for PBXNativeTarget "AdBlcokUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +626,7 @@
 				D40B054D1BC6A0D300524843 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
