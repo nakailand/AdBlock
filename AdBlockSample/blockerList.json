@@ -6,5 +6,82 @@
         "trigger": {
             "url-filter": "webkit.org/images/icon-gold.png"
         }
-    }
+    },
+    {
+        "action": {
+            "type": "block"
+        },
+        "trigger": {
+            "url-filter": "spsvc5.i-mobile.co.jp",
+            "load-type": [
+                   "third-party"
+                   ]
+        }
+    },
+    {
+        "action": {
+            "type": "block"
+        },
+        "trigger": {
+            "url-filter": "spsvc4.i-mobile.co.jp",
+            "load-type": [
+                   "third-party"
+                   ]
+        }
+    },
+    {
+        "action": {
+            "type": "block"
+        },
+        "trigger": {
+            "url-filter": "c1.nend.net",
+            "load-type": [
+                   "third-party"
+                   ]
+        }
+    },
+     {
+     "action": {
+     "type": "block"
+     },
+     "trigger": {
+     "url-filter": "i.yimg.jp",
+     "load-type": [
+                   "third-party"
+                   ]
+     }
+ },
+     {
+     "action": {
+     "type": "block"
+     },
+     "trigger": {
+     "url-filter": "d.amoad.com",
+     "load-type": [
+                   "third-party"
+                   ]
+     }
+ },
+     {
+     "action": {
+     "type": "block"
+     },
+     "trigger": {
+     "url-filter": "googleads.g.doubleclick.net",
+     "load-type": [
+                   "third-party"
+                   ]
+     }
+ },
+     {
+     "action": {
+     "type": "block"
+     },
+     "trigger": {
+     "url-filter": "cl.nex8.net",
+     "load-type": [
+                   "third-party"
+                   ]
+     }
+ }
 ]

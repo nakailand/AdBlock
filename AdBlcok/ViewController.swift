@@ -7,12 +7,19 @@
 //
 
 import UIKit
+import SafariServices
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        SFContentBlockerManager.reloadContentBlockerWithIdentifier("com.nakailand.AdBlcok") {
+            error in
+            print(error)
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
